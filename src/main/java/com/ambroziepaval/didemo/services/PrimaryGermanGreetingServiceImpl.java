@@ -9,11 +9,11 @@ import org.springframework.stereotype.Service;
  */
 @Service
 @Primary
-@Profile("es")
-public class PrimarySpanishGreetingServiceImpl implements GreetingService {
+@Profile("de")
+public class PrimaryGermanGreetingServiceImpl implements GreetingService{
 
     @Override
     public String sayGreetings() {
-        return "Hola desde el Servicio Primario";
+        return "Hallo vom Primärdienst";
     }
 }
