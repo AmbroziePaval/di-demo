@@ -4,7 +4,7 @@ import com.ambroziepaval.didemo.services.GreetingServiceImpl;
 import org.junit.Before;
 import org.junit.Test;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
 /**
  * Created by Ambrozie on 01/10/2018
@@ -16,7 +16,7 @@ public class PropertyInjectedControllerTest {
     @Before
     public void setUp() {
         this.propertyInjectedController = new PropertyInjectedController();
-        this.propertyInjectedController.greetingService = new GreetingServiceImpl();
+        this.propertyInjectedController.greetingServiceImpl = new GreetingServiceImpl();
     }
 
     @Test
