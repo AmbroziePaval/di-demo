@@ -1,6 +1,7 @@
 package com.ambroziepaval.didemo;
 
 import com.ambroziepaval.didemo.examplebeans.FakeDataSource;
+import com.ambroziepaval.didemo.examplebeans.FakeJmsBroker;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ConfigurableApplicationContext;
@@ -20,5 +21,8 @@ public class DiDemoApplication {
 
         FakeDataSource fakeDataSource = applicationContext.getBean(FakeDataSource.class);
         System.out.println(fakeDataSource.getUser());
+
+        FakeJmsBroker fakeJmsBroker = applicationContext.getBean(FakeJmsBroker.class);
+        System.out.println(fakeJmsBroker.getUser());
     }
 }
